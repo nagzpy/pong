@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+  <div id="screen">
+    
+  </div>
+  
+  <script type-'module' defer>
+  
+  import * as me from 'https://cdn.jsdelivr.net/npm/melonjs@14.5.0/dist/melonjs.module.js'
+
+  width = Window.innerWidth()
+  height = Window.innerHeight()
+
+  me.device.onReady(
+    () => {
+  
+      if (!me.video.init(width, height, {parent: 'screen'})){
+        alert("Your browser can't run this")
+        return
+      }
+  
+      text = new me.Text(width/2, height/2, {text: 'Hello Word', font: 'Arial', size: 20})
+      
+    }
+  )
+  
+  </script>
+ 
+</body>
+
+</html>
