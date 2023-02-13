@@ -21,12 +21,12 @@
   me.device.onReady(
     () => {
   
-      if (!me.video.init(width, height, {parent: 'screen'})){
+      if (!me.video.init(width, height, {parent: 'screen', scale:'auto'})){
         alert("Your browser can't run this")
         return
       }
   
-      text = new me.Text(width/2, height/2, {text: 'Hello Word', font: 'Arial', size: 20})
+      me.game.world.addChild(new me.Text(width/2, height/2, {text: 'Hello Word', font: 'Arial', size: 20}))
       
     }
   )
