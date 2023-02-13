@@ -23,8 +23,6 @@
   me.device.onReady(
     () => {
       
-      me.device.requestFullscreen()
-      
       if (!me.video.init(width, height, {parent: 'screen', scale:'auto'})){
         alert("Your browser can't run this")
         return
