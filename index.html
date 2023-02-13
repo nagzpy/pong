@@ -22,12 +22,14 @@
     
   me.device.onReady(
     () => {
-  
+      
+      me.device.requestFullscreen()
+      
       if (!me.video.init(width, height, {parent: 'screen', scale:'auto'})){
         alert("Your browser can't run this")
         return
       }
-      me.device.requestFullscreen()
+      
       me.game.world.addChild(new me.Text(width2, height2, {text: 'Hello Word', font: 'Arial', size: 20, fillStyle:"#FFFFFF"}))
       
     }
