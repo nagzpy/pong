@@ -17,7 +17,9 @@
 
   width = window.innerWidth
   height = window.innerHeight
-
+  width2 = width/2
+  height2 = height/2
+    
   me.device.onReady(
     () => {
   
@@ -26,7 +28,7 @@
         return
       }
   
-      me.game.world.addChild(new me.Text(width/2, height/2, {text: 'Hello Word', font: 'Arial', size: 20}))
+      me.game.world.addChild(new me.Text(width2, height2, {text: 'Hello Word', font: 'Arial', size: 20}))
       
     }
   )
