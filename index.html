@@ -44,6 +44,15 @@
       var player_bat = new me.Sprite(width2, height, {image:"bat"})
       
       me.game.world.addChild(player_bat)
+      me.input.bindKey(me.input.KEY.LEFT, "left")
+      me.input.bindKey(me.input.KEY.RIGHT, "right")
+      me.input.bindKey(me.input.KEY.A, "a")
+      me.input.bindKey(me.input.KEY.D, "d")
+      
+      if (me.input.isKeyPressed('left') || me.input.isKeyPressed('a')){
+      	console.log('pressed') 
+      }
+      
       
       
     }
