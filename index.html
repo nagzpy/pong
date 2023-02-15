@@ -41,10 +41,10 @@
       
       me.loader.load({name: "bat", type:"image", src: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAAAWCAYAAACFbNPBAAAAAXNSR0IArs4c6QAAAK9JREFUeF7t1bERwzAMBEGx/46V0A3YDi79VY4AC97o3Hvv4yNA4KvAEYiXQeC3gEC8DgJ/BATieRAQiDdAoAn4gzQ3UyMCAhk5tDWbgECam6kRAYGMHNqaTUAgzc3UiIBARg5tzSYgkOZmakRAICOHtmYTEEhzMzUiIJCRQ1uzCQikuZkaERDIyKGt2QQE0txMjQgIZOTQ1mwCAmlupkYEBDJyaGs2AYE0N1MbAu8HUNBYudsfB8kAAAAASUVORK5CYII="})
       
-      me.input.bindKey(me.input.KEY.LEFT, 'left')
-      me.input.bindKey(me.input.KEY.RIGHT, 'right')
-      me.input.bindKey(me.input.KEY.A, 'a')
-      me.input.bindKey(me.input.KEY.D, 'd')
+      me.input.bindKey(me.input.KEY.LEFT, 'left', true)
+      me.input.bindKey(me.input.KEY.RIGHT, 'right', true)
+      me.input.bindKey(me.input.KEY.A, 'a', true)
+      me.input.bindKey(me.input.KEY.D, 'd', true)
       
       class player_bat extends me.Sprite {
       
